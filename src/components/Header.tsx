@@ -32,19 +32,11 @@ export default function Header({ activeTab, setActiveTab, onOpenQuote }: HeaderP
     setIsMobileMenuOpen(false);
     
     // Smooth scroll to target section if on home, or just let App handle it
-    const element = document.getElementById(tabId);
-    if (element) {
-      const offset = 90; // Header height
-      const bodyRect = document.body.getBoundingClientRect().top;
-      const elementRect = element.getBoundingClientRect().top;
-      const elementPosition = elementRect - bodyRect;
-      const offsetPosition = elementPosition - offset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-    }
+    // Wait for the mobile menu to close, then scroll. Sections have
+    // scroll-margin-top (index.css) so the fixed header doesn't cover titles.
+    setTimeout(() => {
+      document.getElementById(tabId)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 300);
   };
 
   return (

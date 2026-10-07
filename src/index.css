@@ -40,3 +40,8 @@ body {
   background-color: #f4f7f2;
   color: #2d3a27;
 }
+
+/* Keep section titles clear of the fixed header when jumping from the menu */
+section[id] {
+  scroll-margin-top: 96px;
+}

@@ -219,7 +219,7 @@ export default function Testimonials() {
               >
                 {/* AFTER IMAGE (Background) */}
                 <img
-                  src="/src/assets/images/fencing_work_1783790899588.jpg"
+                  src="/images/fencing_work_1783790899588.jpg"
                   alt="After Closeboard Fencing"
                   className="absolute inset-0 w-full h-full object-cover"
                   referrerPolicy="no-referrer"
@@ -275,7 +275,7 @@ export default function Testimonials() {
               >
                 {/* AFTER IMAGE (Background) */}
                 <img
-                  src="/src/assets/images/patio_work_1783790912469.jpg"
+                  src="/images/patio_work_1783790912469.jpg"
                   alt="After Indian Sandstone Patio"
                   className="absolute inset-0 w-full h-full object-cover"
                   referrerPolicy="no-referrer"

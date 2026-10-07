@@ -12,7 +12,7 @@ export default function Hero({ onOpenEstimator, onOpenTestimonials }: HeroProps)
       {/* Background image overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/landscaping_hero_1783790885940.jpg"
+          src="/images/landscaping_hero_1783790885940.jpg"
           alt="Premium Landscaping Backyard"
           className="w-full h-full object-cover object-center opacity-25 transform scale-100 transition-transform"
           referrerPolicy="no-referrer"

@@ -13,7 +13,7 @@ export const SERVICES: Service[] = [
       'Strong wind-resistant construction',
       'Includes a 10-year timber rot warranty'
     ],
-    image: '/src/assets/images/fencing_work_1783790899588.jpg',
+    image: '/images/fencing_work_1783790899588.jpg',
     basePricePerUnit: 95, // £ per linear meter
     unitLabel: 'meter'
   },
@@ -29,7 +29,7 @@ export const SERVICES: Service[] = [
       'Bespoke brickwork borders & steps',
       'Fully sealed and stain-resistant finishes'
     ],
-    image: '/src/assets/images/patio_work_1783790912469.jpg',
+    image: '/images/patio_work_1783790912469.jpg',
     basePricePerUnit: 140, // £ per square meter
     unitLabel: 'sqm'
   },
@@ -61,7 +61,7 @@ export const SERVICES: Service[] = [
       'Ultra-realistic multi-tonal fibers',
       'Child-safe & pet-friendly fibers'
     ],
-    image: '/src/assets/images/landscaping_hero_1783790885940.jpg',
+    image: '/images/landscaping_hero_1783790885940.jpg',
     basePricePerUnit: 35, // £ per square meter
     unitLabel: 'sqm'
   },
@@ -95,7 +95,7 @@ export const TESTIMONIALS: Testimonial[] = [
     reply: 'Thank you for the kind words, David! It was a pleasure working on your project and replacing that old boundary fence with our signature heavy-duty timber panels.',
     projectImages: {
       before: 'https://images.unsplash.com/photo-1500333186434-756997a01621?auto=format&fit=crop&w=800&q=80', // Old run-down fence
-      after: '/src/assets/images/fencing_work_1783790899588.jpg'
+      after: '/images/fencing_work_1783790899588.jpg'
     },
     verified: true
   },
@@ -110,7 +110,7 @@ export const TESTIMONIALS: Testimonial[] = [
     reply: 'Sarah & Mark, thank you so much! It was a major earthwork excavation to level that slope, but the final porcelain tiles paired with that fresh grass look absolutely spectacular.',
     projectImages: {
       before: 'https://images.unsplash.com/photo-1516253593875-bd7ba052fbc5?auto=format&fit=crop&w=800&q=80', // Sloped weedy ground
-      after: '/src/assets/images/patio_work_1783790912469.jpg'
+      after: '/images/patio_work_1783790912469.jpg'
     },
     verified: true
   },
@@ -155,14 +155,14 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     category: 'fencing',
     title: 'Closeboard Boundary Fencing',
     description: 'Heavy duty vertical closeboard fencing with concrete posts and matching gravel boards.',
-    image: '/src/assets/images/fencing_work_1783790899588.jpg'
+    image: '/images/fencing_work_1783790899588.jpg'
   },
   {
     id: 'g-2',
     category: 'patios',
     title: 'Indian Sandstone Paving',
     description: 'Multi-tonal natural stone patio with matching brick retainer walls and stone paving borders.',
-    image: '/src/assets/images/patio_work_1783790912469.jpg'
+    image: '/images/patio_work_1783790912469.jpg'
   },
   {
     id: 'g-3',
@@ -176,7 +176,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     category: 'landscaping',
     title: 'Lawn Re-Turfing & Excavation',
     description: 'Full garden clearance, soil preparation, and premium cultivated turf installation.',
-    image: '/src/assets/images/landscaping_hero_1783790885940.jpg'
+    image: '/images/landscaping_hero_1783790885940.jpg'
   },
   {
     id: 'g-5',
