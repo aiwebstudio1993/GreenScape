@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { TESTIMONIALS } from '../data';
 import { Testimonial } from '../types';
 import { Star, Quote, MapPin, CheckCircle2, MessageSquare, Plus, X, Upload, Sparkles, Filter } from 'lucide-react';
@@ -20,15 +20,9 @@ export default function Testimonials() {
   });
   const [formSuccess, setFormSuccess] = useState(false);
 
-  // Before & After Sliders state
-  const [sliderPos1, setSliderPos1] = useState(50); // Review 1 fence slider
-  const [sliderPos2, setSliderPos2] = useState(50); // Review 2 patio slider
-  const sliderRef1 = useRef<HTMLDivElement>(null);
-  const sliderRef2 = useRef<HTMLDivElement>(null);
-
   // Load testimonials from state/localStorage
   useEffect(() => {
-    const saved = localStorage.getItem('tc_landscaping_testimonials');
+    const saved = localStorage.getItem('greenscape_testimonials');
     if (saved) {
       try {
         setTestimonials(JSON.parse(saved));
@@ -39,33 +33,6 @@ export default function Testimonials() {
       setTestimonials(TESTIMONIALS);
     }
   }, []);
-
-  const handleSliderMove = (e: MouseEvent | TouchEvent, sliderId: 1 | 2) => {
-    const ref = sliderId === 1 ? sliderRef1 : sliderRef2;
-    const setPos = sliderId === 1 ? setSliderPos1 : setSliderPos2;
-    
-    if (!ref.current) return;
-    const rect = ref.current.getBoundingClientRect();
-    const clientX = 'touches' in e ? e.touches[0].clientX : e.clientX;
-    const x = clientX - rect.left;
-    const percentage = Math.max(0, Math.min(100, (x / rect.width) * 100));
-    setPos(percentage);
-  };
-
-  const initSliderDrag = (sliderId: 1 | 2) => {
-    const moveHandler = (e: MouseEvent | TouchEvent) => handleSliderMove(e, sliderId);
-    const stopHandler = () => {
-      window.removeEventListener('mousemove', moveHandler);
-      window.removeEventListener('mouseup', stopHandler);
-      window.removeEventListener('touchmove', moveHandler);
-      window.removeEventListener('touchend', stopHandler);
-    };
-
-    window.addEventListener('mousemove', moveHandler);
-    window.addEventListener('mouseup', stopHandler);
-    window.addEventListener('touchmove', moveHandler);
-    window.addEventListener('touchend', stopHandler);
-  };
 
   // Filter types
   const categories = ['all', 'Fencing', 'Patio', 'Decking', 'Turfing'];
@@ -103,7 +70,7 @@ export default function Testimonials() {
 
     const updated = [addedReview, ...testimonials];
     setTestimonials(updated);
-    localStorage.setItem('tc_landscaping_testimonials', JSON.stringify(updated));
+    localStorage.setItem('greenscape_testimonials', JSON.stringify(updated));
     setFormSuccess(true);
 
     setTimeout(() => {
@@ -198,129 +165,55 @@ export default function Testimonials() {
           </div>
         </div>
 
-        {/* INTERACTIVE BEFORE & AFTER SLIDERS */}
-        <div className="mb-20 space-y-8">
+        {/* BEFORE & AFTER TRANSFORMATIONS (side by side) */}
+        <div className="mb-20">
           <div className="text-center max-w-2xl mx-auto mb-10">
             <h3 className="font-sans text-2xl font-bold uppercase tracking-wide text-[#2d3a27]">See Our Transformations</h3>
             <p className="text-xs text-[#3d4f35] mt-1 font-light">
-              Drag the sage slider bar left and right to inspect the quality of our landscaping transformations.
+              The same gardens, before and after our team got to work.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            
-            {/* Before After Card 1: Fencing */}
-            <div className="bg-white border border-[#2d3a27]/10 rounded-none overflow-hidden p-6 shadow-none">
-              <div 
-                ref={sliderRef1}
-                className="relative h-72 md:h-80 w-full rounded-none overflow-hidden select-none cursor-ew-resize border border-[#2d3a27]/10"
-                onMouseDown={() => initSliderDrag(1)}
-                onTouchStart={() => initSliderDrag(1)}
-              >
-                {/* AFTER IMAGE (Background) */}
-                <img
-                  src="/images/fencing_work_1783790899588.jpg"
-                  alt="After Closeboard Fencing"
-                  className="absolute inset-0 w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
-                />
-                <span className="absolute bottom-4 right-4 z-20 bg-[#2d3a27] text-white text-[10px] font-bold tracking-widest uppercase px-2.5 py-1 rounded-none">
-                  AFTER WORK
-                </span>
-
-                {/* BEFORE IMAGE (Foreground clip container) */}
-                <div 
-                  className="absolute inset-0 z-10 overflow-hidden"
-                  style={{ width: `${sliderPos1}%` }}
-                >
-                  <img
-                    src="https://images.unsplash.com/photo-1500333186434-756997a01621?auto=format&fit=crop&w=800&q=80"
-                    alt="Before Storm Damaged Fence"
-                    className="absolute inset-0 w-full h-full object-cover max-w-none"
-                    style={{ width: sliderRef1.current?.getBoundingClientRect().width }}
-                    referrerPolicy="no-referrer"
-                  />
-                  <span className="absolute bottom-4 left-4 z-20 bg-red-800 text-white text-[10px] font-bold tracking-widest uppercase px-2.5 py-1 rounded-none">
-                    BEFORE: Overgrown & Storm Rotted
-                  </span>
+          <div className="space-y-10">
+            {[
+              {
+                before: '/images/fence-before.jpg',
+                after: '/images/fence-after.jpg',
+                beforeAlt: 'Overgrown garden with a broken, leaning fence',
+                afterAlt: 'The same garden with a new closeboard fence, fresh lawn and planted borders',
+                title: 'Closeboard Fencing & Garden Renovation — Lichfield',
+                text: 'Replaced a collapsed, rotten boundary fence, cleared years of overgrowth, laid fresh turf and planted new borders.',
+              },
+              {
+                before: '/images/patio-before.jpg',
+                after: '/images/patio-after.jpg',
+                beforeAlt: 'Sloped, muddy and weedy back garden',
+                afterAlt: 'The same garden with a level porcelain patio, brick edging and a flat new lawn',
+                title: 'Porcelain Patio & Lawn Levelling — Tamworth',
+                text: 'Excavated and levelled a steep muddy slope, then laid a light-grey porcelain patio with brick edging and a flat new lawn.',
+              },
+            ].map((t) => (
+              <div key={t.title} className="bg-white border border-[#2d3a27]/10 rounded-none p-4 md:p-6">
+                <div className="grid grid-cols-2 gap-2 md:gap-4">
+                  <figure className="relative">
+                    <img src={t.before} alt={t.beforeAlt} loading="lazy" className="w-full aspect-[4/3] object-cover" />
+                    <figcaption className="absolute top-2 left-2 md:top-3 md:left-3 bg-red-800 text-white text-[10px] md:text-xs font-bold tracking-widest uppercase px-2.5 py-1">
+                      Before
+                    </figcaption>
+                  </figure>
+                  <figure className="relative">
+                    <img src={t.after} alt={t.afterAlt} loading="lazy" className="w-full aspect-[4/3] object-cover" />
+                    <figcaption className="absolute top-2 left-2 md:top-3 md:left-3 bg-[#2d3a27] text-white text-[10px] md:text-xs font-bold tracking-widest uppercase px-2.5 py-1">
+                      After
+                    </figcaption>
+                  </figure>
                 </div>
-
-                {/* SLIDER CONTROLLER LINE */}
-                <div 
-                  className="absolute top-0 bottom-0 z-30 w-1 bg-[#829379] cursor-ew-resize"
-                  style={{ left: `${sliderPos1}%` }}
-                >
-                  <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-8 h-8 bg-[#829379] text-white border-2 border-[#2d3a27] rounded-none shadow-lg flex items-center justify-center font-bold text-sm">
-                    ↔
-                  </div>
+                <div className="mt-4 text-left">
+                  <span className="text-[10px] uppercase font-bold tracking-widest text-[#829379]">{t.title}</span>
+                  <p className="text-xs text-[#3d4f35] font-light mt-1">{t.text}</p>
                 </div>
               </div>
-
-              {/* Slider description */}
-              <div className="mt-4 text-left">
-                <span className="text-[10px] uppercase font-bold tracking-widest text-[#829379]">Closeboard Fencing Replacement — Lichfield</span>
-                <p className="text-xs text-[#3d4f35] font-light mt-1">
-                  Replaced an old rotted boundary fence leaning on a collapsing tree. Cleared hedges and installed sturdy pressure-treated timber with concrete posts.
-                </p>
-              </div>
-            </div>
-
-            {/* Before After Card 2: Patio */}
-            <div className="bg-white border border-[#2d3a27]/10 rounded-none overflow-hidden p-6 shadow-none">
-              <div 
-                ref={sliderRef2}
-                className="relative h-72 md:h-80 w-full rounded-none overflow-hidden select-none cursor-ew-resize border border-[#2d3a27]/10"
-                onMouseDown={() => initSliderDrag(2)}
-                onTouchStart={() => initSliderDrag(2)}
-              >
-                {/* AFTER IMAGE (Background) */}
-                <img
-                  src="/images/patio_work_1783790912469.jpg"
-                  alt="After Indian Sandstone Patio"
-                  className="absolute inset-0 w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
-                />
-                <span className="absolute bottom-4 right-4 z-20 bg-[#2d3a27] text-white text-[10px] font-bold tracking-widest uppercase px-2.5 py-1 rounded-none">
-                  AFTER WORK
-                </span>
-
-                {/* BEFORE IMAGE (Foreground clip container) */}
-                <div 
-                  className="absolute inset-0 z-10 overflow-hidden"
-                  style={{ width: `${sliderPos2}%` }}
-                >
-                  <img
-                    src="https://images.unsplash.com/photo-1516253593875-bd7ba052fbc5?auto=format&fit=crop&w=800&q=80"
-                    alt="Before Muddy Slope"
-                    className="absolute inset-0 w-full h-full object-cover max-w-none"
-                    style={{ width: sliderRef2.current?.getBoundingClientRect().width }}
-                    referrerPolicy="no-referrer"
-                  />
-                  <span className="absolute bottom-4 left-4 z-20 bg-red-800 text-white text-[10px] font-bold tracking-widest uppercase px-2.5 py-1 rounded-none">
-                    BEFORE: Muddy sloped lawn
-                  </span>
-                </div>
-
-                {/* SLIDER CONTROLLER LINE */}
-                <div 
-                  className="absolute top-0 bottom-0 z-30 w-1 bg-[#829379] cursor-ew-resize"
-                  style={{ left: `${sliderPos2}%` }}
-                >
-                  <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-8 h-8 bg-[#829379] text-white border-2 border-[#2d3a27] rounded-none shadow-lg flex items-center justify-center font-bold text-sm">
-                    ↔
-                  </div>
-                </div>
-              </div>
-
-              {/* Slider description */}
-              <div className="mt-4 text-left">
-                <span className="text-[10px] uppercase font-bold tracking-widest text-[#829379]">Indian Sandstone Patio & Excavation — Tamworth</span>
-                <p className="text-xs text-[#3d4f35] font-light mt-1">
-                  Excavated, re-graded, and leveled a steep muddy garden lawn. Created a durable, dual-tier sandstone terrace ideal for seating.
-                </p>
-              </div>
-            </div>
-
+            ))}
           </div>
         </div>
 

@@ -45,7 +45,7 @@ export const SERVICES: Service[] = [
       'Matching integrated handrails & steps',
       'Slip-resistant texture patterns'
     ],
-    image: 'https://images.unsplash.com/photo-1598902108854-10e335adac99?auto=format&fit=crop&w=800&q=80',
+    image: '/images/decking.jpg',
     basePricePerUnit: 120, // £ per square meter
     unitLabel: 'sqm'
   },
@@ -77,7 +77,7 @@ export const SERVICES: Service[] = [
       'Fully matching cladding styles',
       'Reinforced structural posts'
     ],
-    image: 'https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&w=800&q=80',
+    image: '/images/garden-gate.jpg',
     basePricePerUnit: 250, // £ per single gate (flat rate base)
     unitLabel: 'gate'
   }
@@ -94,8 +94,8 @@ export const TESTIMONIALS: Testimonial[] = [
     comment: 'GreenScape Landscaping did an absolutely superb job. They took down our storm-damaged fence and replaced it with a beautiful closeboard fence and a matching side gate. The workmanship is second to none, the posts are securely set in concrete, and everything is completely straight and tidy. Cleaned up all the debris before leaving. Highly recommend!',
     reply: 'Thank you for the kind words, David! It was a pleasure working on your project and replacing that old boundary fence with our signature heavy-duty timber panels.',
     projectImages: {
-      before: 'https://images.unsplash.com/photo-1500333186434-756997a01621?auto=format&fit=crop&w=800&q=80', // Old run-down fence
-      after: '/images/fencing_work_1783790899588.jpg'
+      before: '/images/fence-before.jpg',
+      after: '/images/fence-after.jpg'
     },
     verified: true
   },
@@ -109,8 +109,8 @@ export const TESTIMONIALS: Testimonial[] = [
     comment: 'Absolutely blown away by the transformation of our back garden. We had an old slopey grass area that was practically unusable. The team excavated, put down a solid sub-base, and laid a gorgeous porcelain tile patio. They also re-leveled the upper lawn and laid fresh turf. It looks like a luxury resort now! They worked hard, stayed within budget, and were extremely polite.',
     reply: 'Sarah & Mark, thank you so much! It was a major earthwork excavation to level that slope, but the final porcelain tiles paired with that fresh grass look absolutely spectacular.',
     projectImages: {
-      before: 'https://images.unsplash.com/photo-1516253593875-bd7ba052fbc5?auto=format&fit=crop&w=800&q=80', // Sloped weedy ground
-      after: '/images/patio_work_1783790912469.jpg'
+      before: '/images/patio-before.jpg',
+      after: '/images/patio-after.jpg'
     },
     verified: true
   },
@@ -168,8 +168,8 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: 'g-3',
     category: 'decking',
     title: 'Contemporary Composite Deck',
-    description: 'Charcoal grey high-density composite decking with integrated steps and hidden fasteners.',
-    image: 'https://images.unsplash.com/photo-1591857172899-41d9943f014e?auto=format&fit=crop&w=800&q=80'
+    description: 'Grey-brown composite decking with wide integrated steps, a glass balustrade and hidden fasteners.',
+    image: '/images/decking.jpg'
   },
   {
     id: 'g-4',
@@ -181,9 +181,9 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 'g-5',
     category: 'gates',
-    title: 'Bespoke T&G Double Driveway Gates',
-    description: 'Custom mortise and tenon timber gates with heavy-duty galvanized hinges and secure drop bolts.',
-    image: 'https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&w=800&q=80'
+    title: 'Bespoke Timber Side Gate',
+    description: 'Custom mortise and tenon timber gate set into matching closeboard fencing, with heavy-duty black ironmongery.',
+    image: '/images/garden-gate.jpg'
   },
   {
     id: 'g-6',
