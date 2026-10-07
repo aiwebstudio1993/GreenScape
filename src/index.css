@@ -45,3 +45,15 @@ body {
 section[id] {
   scroll-margin-top: 96px;
 }
+
+/* Slow zoom on the hero photo */
+@keyframes hero-zoom {
+  from { transform: scale(1.08); }
+  to { transform: scale(1); }
+}
+.hero-zoom {
+  animation: hero-zoom 14s ease-out both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-zoom { animation: none; }
+}
