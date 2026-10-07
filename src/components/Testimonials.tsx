@@ -131,7 +131,7 @@ export default function Testimonials() {
           </h2>
           <div className="w-16 h-[2px] bg-[#829379] mx-auto"></div>
           <p className="text-[#3d4f35] text-sm md:text-base font-light max-w-2xl mx-auto leading-relaxed">
-            Real reviews from local homeowners in Basingstoke, Winchester, and Reading. Read about our punctuality, neat craftsmanship, and transparent service.
+            Real reviews from local homeowners in Lichfield, Tamworth, and Burton. Read about our punctuality, neat craftsmanship, and transparent service.
           </p>
         </div>
 
@@ -258,7 +258,7 @@ export default function Testimonials() {
 
               {/* Slider description */}
               <div className="mt-4 text-left">
-                <span className="text-[10px] uppercase font-bold tracking-widest text-[#829379]">Closeboard Fencing Replacement — Basingstoke</span>
+                <span className="text-[10px] uppercase font-bold tracking-widest text-[#829379]">Closeboard Fencing Replacement — Lichfield</span>
                 <p className="text-xs text-[#3d4f35] font-light mt-1">
                   Replaced an old rotted boundary fence leaning on a collapsing tree. Cleared hedges and installed sturdy pressure-treated timber with concrete posts.
                 </p>
@@ -314,7 +314,7 @@ export default function Testimonials() {
 
               {/* Slider description */}
               <div className="mt-4 text-left">
-                <span className="text-[10px] uppercase font-bold tracking-widest text-[#829379]">Indian Sandstone Patio & Excavation — Winchester</span>
+                <span className="text-[10px] uppercase font-bold tracking-widest text-[#829379]">Indian Sandstone Patio & Excavation — Tamworth</span>
                 <p className="text-xs text-[#3d4f35] font-light mt-1">
                   Excavated, re-graded, and leveled a steep muddy garden lawn. Created a durable, dual-tier sandstone terrace ideal for seating.
                 </p>
@@ -392,7 +392,7 @@ export default function Testimonials() {
                 {item.reply && (
                   <div className="bg-[#f4f7f2] border-l-2 border-[#829379] p-4 rounded-none space-y-1.5 mt-4">
                     <span className="text-[10px] uppercase font-bold tracking-wider text-[#2d3a27] block">
-                      TC Fencing Response:
+                      GreenScape Response:
                     </span>
                     <p className="text-xs text-[#3d4f35] leading-relaxed font-light">
                       {item.reply}
@@ -457,7 +457,7 @@ export default function Testimonials() {
                         required
                         value={newReview.location}
                         onChange={(e) => setNewReview({ ...newReview, location: e.target.value })}
-                        placeholder="e.g., Basingstoke, Hampshire"
+                        placeholder="e.g., Lichfield, Staffordshire"
                         className="w-full bg-[#f4f7f2] border border-[#2d3a27]/10 rounded-none p-3 text-sm focus:outline-none focus:border-[#2d3a27]"
                       />
                     </div>
@@ -504,7 +504,7 @@ export default function Testimonials() {
                       rows={4}
                       value={newReview.comment}
                       onChange={(e) => setNewReview({ ...newReview, comment: e.target.value })}
-                      placeholder="Share your experience working with TC Fencing & Landscaping..."
+                      placeholder="Share your experience working with GreenScape Landscaping..."
                       className="w-full bg-[#f4f7f2] border border-[#2d3a27]/10 rounded-none p-3 text-sm focus:outline-none focus:border-[#2d3a27] resize-none"
                     />
                   </div>

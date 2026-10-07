@@ -29,7 +29,7 @@ export default function Hero({ onOpenEstimator, onOpenTestimonials }: HeroProps)
             {/* Tagline badge */}
             <div className="inline-flex items-center space-x-2 bg-[#829379]/15 border border-[#829379]/40 px-4 py-1.5 rounded-none text-[#a3b29c] text-xs font-semibold tracking-widest uppercase">
               <Sparkles className="w-3.5 h-3.5 text-[#829379] animate-pulse" />
-              <span>Hampshire & Berkshire Premier Landscaping</span>
+              <span>Staffordshire's Premier Landscaping</span>
             </div>
 
             {/* Main title */}
@@ -40,7 +40,7 @@ export default function Hero({ onOpenEstimator, onOpenTestimonials }: HeroProps)
 
             {/* Description */}
             <p className="text-[#faf9f5]/80 text-base md:text-lg max-w-xl leading-relaxed font-light">
-              Transforming outdoor spaces with high-end fencing, timber decking, natural sandstone patios, and pristine lawns. Family-run, fully insured, and highly reviewed across Basingstoke, Winchester, and Reading.
+              Transforming outdoor spaces with high-end fencing, timber decking, natural sandstone patios, and pristine lawns. Family-run, fully insured, and highly reviewed across Lichfield, Tamworth, and Burton.
             </p>
 
             {/* Key credentials bullet points */}
@@ -111,13 +111,13 @@ export default function Hero({ onOpenEstimator, onOpenTestimonials }: HeroProps)
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-[#faf9f5]/70">Projects Completed</span>
-                    <span className="font-bold text-[#faf9f5]">800+ in Hampshire</span>
+                    <span className="font-bold text-[#faf9f5]">800+ in Staffordshire</span>
                   </div>
                 </div>
 
                 <div className="bg-[#2d3a27]/50 border border-[#3d4f35]/60 rounded-none p-4 text-xs text-[#faf9f5]/80 italic">
                   "The closeboard fence is rock solid, and the patio looks stunning. The cleanest and most professional builders I’ve had in years."
-                  <span className="block mt-2 text-right font-semibold text-[#829379] not-italic">— David H., Basingstoke</span>
+                  <span className="block mt-2 text-right font-semibold text-[#829379] not-italic">— David H., Lichfield</span>
                 </div>
               </div>
             </div>

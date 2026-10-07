@@ -111,13 +111,13 @@ export default function ContactForm({ prefilledInquiry, onClearPrefilled }: Cont
               </h3>
 
               <div className="space-y-4">
-                <a href="tel:01256830024" className="flex items-start space-x-4 group">
+                <a href="tel:01214960738" className="flex items-start space-x-4 group">
                   <div className="p-3 bg-[#2d3a27] text-white rounded-none border border-white/10 group-hover:bg-[#829379] group-hover:text-white transition-colors">
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
                     <span className="text-[10px] uppercase font-bold text-[#3d4f35] block tracking-wider">Call Landline</span>
-                    <span className="font-sans font-bold text-[#2d3a27] text-base">01256 830024</span>
+                    <span className="font-sans font-bold text-[#2d3a27] text-base">0121 496 0738</span>
                     <span className="text-[10px] text-gray-400 block">Fastest for booking slot</span>
                   </div>
                 </a>
@@ -132,13 +132,13 @@ export default function ContactForm({ prefilledInquiry, onClearPrefilled }: Cont
                   </div>
                 </a>
 
-                <a href="mailto:info@tcfencinglandscaping.co.uk" className="flex items-start space-x-4 group">
+                <a href="mailto:hello@greenscape-staffs.co.uk" className="flex items-start space-x-4 group">
                   <div className="p-3 bg-[#2d3a27] text-white rounded-none border border-white/10 group-hover:bg-[#829379] group-hover:text-white transition-colors">
                     <Mail className="w-5 h-5" />
                   </div>
                   <div>
                     <span className="text-[10px] uppercase font-bold text-[#3d4f35] block tracking-wider">Email Inquiry</span>
-                    <span className="text-sm font-semibold text-[#2d3a27] break-all">info@tcfencinglandscaping.co.uk</span>
+                    <span className="text-sm font-semibold text-[#2d3a27] break-all">hello@greenscape-staffs.co.uk</span>
                   </div>
                 </a>
               </div>
@@ -161,7 +161,7 @@ export default function ContactForm({ prefilledInquiry, onClearPrefilled }: Cont
                 <MapPin className="w-5 h-5 text-[#829379] mr-2" /> Coverage Regions
               </h3>
               <p className="text-xs text-[#f4f7f2]/75 mb-4 font-light leading-relaxed">
-                We proudly serve residential gardens within a 25-mile radius of Basingstoke, including:
+                We proudly serve residential gardens within a 25-mile radius of Lichfield, including:
               </p>
               <div className="flex flex-wrap gap-1.5 max-h-40 overflow-y-auto pr-2 custom-scrollbar">
                 {LOCAL_AREAS.map((area) => (
@@ -188,7 +188,7 @@ export default function ContactForm({ prefilledInquiry, onClearPrefilled }: Cont
                     <h3 className="font-sans text-2xl font-bold uppercase tracking-wide text-[#2d3a27]">Inquiry Received!</h3>
                     <p className="text-xs text-gray-400 font-mono">Reference Ticket: {ticketId}</p>
                     <p className="text-sm text-[#3d4f35] font-light max-w-md mx-auto leading-relaxed">
-                      Thank you for contacting TC Fencing & Landscaping, <strong>{formData.name}</strong>. Our team has received your details and we will call you back within 24 working hours to arrange your free site survey.
+                      Thank you for contacting GreenScape Landscaping, <strong>{formData.name}</strong>. Our team has received your details and we will call you back within 24 working hours to arrange your free site survey.
                     </p>
                   </div>
 
@@ -248,7 +248,7 @@ export default function ContactForm({ prefilledInquiry, onClearPrefilled }: Cont
                         required
                         value={formData.phone}
                         onChange={handleInputChange}
-                        placeholder="e.g. 01256 830024"
+                        placeholder="e.g. 0121 496 0738"
                         className="w-full bg-white border border-[#2d3a27]/10 rounded-none p-3.5 text-sm focus:outline-none focus:border-[#2d3a27]"
                       />
                     </div>
@@ -281,8 +281,8 @@ export default function ContactForm({ prefilledInquiry, onClearPrefilled }: Cont
                         {LOCAL_AREAS.map(area => (
                           <option key={area} value={area}>{area}</option>
                         ))}
-                        <option value="Other Hampshire">Other Hampshire Location</option>
-                        <option value="Other Berkshire">Other Berkshire Location</option>
+                        <option value="Other Staffordshire">Other Staffordshire Location</option>
+                        <option value="Other West Midlands">Other West Midlands Location</option>
                       </select>
                     </div>
                   </div>

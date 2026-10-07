@@ -33,7 +33,7 @@ export default function Services({ onSelectServiceForEstimate }: ServicesProps) 
           </h2>
           <div className="w-16 h-[2px] bg-[#829379] mx-auto"></div>
           <p className="text-[#3d4f35] text-sm md:text-base max-w-2xl mx-auto font-light leading-relaxed">
-            We deliver premium, durable timber work, pristine stone masonry, and garden renovations tailored specifically for modern Hampshire and Berkshire backyards.
+            We deliver premium, durable timber work, pristine stone masonry, and garden renovations tailored specifically for modern Staffordshire gardens.
           </p>
         </div>
 

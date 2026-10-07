@@ -36,11 +36,11 @@ export default function Footer() {
                   <path d="M12 12a5 5 0 0 1 5-5h4" />
                 </svg>
               </div>
-              <span className="font-sans text-xl font-bold text-white tracking-widest uppercase">TC Fencing</span>
+              <span className="font-sans text-xl font-bold text-white tracking-widest uppercase">GreenScape</span>
             </div>
             
             <p className="text-xs text-[#f4f7f2]/65 leading-relaxed font-light">
-              Premium fencing, decking, paving, and landscaping specialists based in Basingstoke. Providing robust pressure-treated boundaries and garden clearouts across Hampshire and Berkshire for over 15 years.
+              Premium fencing, decking, paving, and landscaping specialists based in Lichfield. Providing robust pressure-treated boundaries and garden clearouts across Staffordshire and the West Midlands for over 15 years.
             </p>
 
             <div className="flex items-center space-x-1.5 text-xs text-[#829379]">
@@ -91,7 +91,7 @@ export default function Footer() {
             <ul className="space-y-3 text-xs">
               <li className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 text-[#829379] shrink-0" />
-                <a href="tel:01256830024" className="hover:text-white">01256 830024</a>
+                <a href="tel:01214960738" className="hover:text-white">0121 496 0738</a>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 text-[#829379] shrink-0" />
@@ -99,7 +99,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 text-[#829379] shrink-0" />
-                <a href="mailto:info@tcfencinglandscaping.co.uk" className="hover:text-white break-all">info@tcfencinglandscaping.co.uk</a>
+                <a href="mailto:hello@greenscape-staffs.co.uk" className="hover:text-white break-all">hello@greenscape-staffs.co.uk</a>
               </li>
               <li className="flex items-center space-x-2">
                 <Clock className="w-4 h-4 text-[#829379] shrink-0" />
@@ -112,7 +112,7 @@ export default function Footer() {
           <div className="lg:col-span-3 space-y-4">
             <h4 className="text-[#829379] text-xs font-bold uppercase tracking-widest">Our Main Areas</h4>
             <p className="text-[10px] text-[#f4f7f2]/60 font-light leading-relaxed">
-              We travel to homeowners in Basingstoke, Winchester, Andover, Fleet, Farnborough, Aldershot, Hook, Oakley, Tadley, Hatch Warren, Chineham, and surrounding Hampshire villages.
+              We travel to homeowners in Lichfield, Tamworth, Burton upon Trent, Stafford, Cannock, Rugeley, Sutton Coldfield, Uttoxeter, Alrewas, Whittington, Shenstone, and surrounding Staffordshire villages.
             </p>
             <div className="flex items-center space-x-1.5 text-xs text-white">
               <ShieldCheck className="w-4 h-4 text-[#829379]" />
@@ -125,9 +125,9 @@ export default function Footer() {
         {/* Lower footer copyright */}
         <div className="pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-[#f4f7f2]/50 space-y-4 md:space-y-0">
           <div className="flex flex-col md:flex-row items-center space-y-1 md:space-y-0 md:space-x-4">
-            <span>© {new Date().getFullYear()} TC Fencing & Landscaping. All Rights Reserved.</span>
+            <span>© {new Date().getFullYear()} GreenScape Landscaping. All Rights Reserved.</span>
             <span className="hidden md:inline">|</span>
-            <span>Registered Hampshire Landscaping Contractors</span>
+            <span>Registered Staffordshire Landscaping Contractors</span>
           </div>
 
           <div className="flex space-x-6">

@@ -31,7 +31,7 @@ export default function Gallery() {
           </h2>
           <div className="w-16 h-[2px] bg-[#829379] mx-auto"></div>
           <p className="text-[#3d4f35] text-sm md:text-base font-light max-w-2xl mx-auto leading-relaxed">
-            Take a look at some of our completed work across Hampshire and Berkshire gardens. All pictures are 100% of our real customer properties.
+            Take a look at some of our completed work across Staffordshire and West Midlands gardens. All pictures are 100% of our real customer properties.
           </p>
         </div>
 
@@ -96,7 +96,7 @@ export default function Gallery() {
         {/* Trust badge under gallery */}
         <div className="mt-12 text-center text-xs text-[#3d4f35] flex items-center justify-center space-x-2">
           <Sparkles className="w-4 h-4 text-[#829379]" />
-          <span>All pictures are genuine projects built and cleared by TC Fencing & Landscaping. <strong>No stock photos larping.</strong></span>
+          <span>All pictures are genuine projects built and cleared by GreenScape Landscaping. <strong>No stock photos larping.</strong></span>
         </div>
 
       </div>

@@ -87,11 +87,11 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     id: 'review-1',
     author: 'David H.',
-    location: 'Basingstoke, Hampshire',
+    location: 'Lichfield, Staffordshire',
     serviceType: 'Closeboard Fencing & Gate',
     date: '2026-06-15',
     rating: 5,
-    comment: 'TC Fencing & Landscaping did an absolutely superb job. They took down our storm-damaged fence and replaced it with a beautiful closeboard fence and a matching side gate. The workmanship is second to none, the posts are securely set in concrete, and everything is completely straight and tidy. Cleaned up all the debris before leaving. Highly recommend!',
+    comment: 'GreenScape Landscaping did an absolutely superb job. They took down our storm-damaged fence and replaced it with a beautiful closeboard fence and a matching side gate. The workmanship is second to none, the posts are securely set in concrete, and everything is completely straight and tidy. Cleaned up all the debris before leaving. Highly recommend!',
     reply: 'Thank you for the kind words, David! It was a pleasure working on your project and replacing that old boundary fence with our signature heavy-duty timber panels.',
     projectImages: {
       before: 'https://images.unsplash.com/photo-1500333186434-756997a01621?auto=format&fit=crop&w=800&q=80', // Old run-down fence
@@ -102,7 +102,7 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     id: 'review-2',
     author: 'Sarah & Mark L.',
-    location: 'Winchester, Hampshire',
+    location: 'Tamworth, Staffordshire',
     serviceType: 'Porcelain Patio & Turfing',
     date: '2026-05-24',
     rating: 5,
@@ -117,18 +117,18 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     id: 'review-3',
     author: 'Michael S.',
-    location: 'Reading, Berkshire',
+    location: 'Burton upon Trent, Staffordshire',
     serviceType: 'Composite Decking',
     date: '2026-06-02',
     rating: 5,
-    comment: 'We contacted TC Fencing to install composite decking on our terrace. The quote was very competitive, and they explained all the material choices thoroughly. The installation process was exceptionally smooth, done in just three days, and the hidden clip fastening makes the surface completely sleek and safe for the kids. Tremendous work.',
+    comment: 'We contacted GreenScape to install composite decking on our terrace. The quote was very competitive, and they explained all the material choices thoroughly. The installation process was exceptionally smooth, done in just three days, and the hidden clip fastening makes the surface completely sleek and safe for the kids. Tremendous work.',
     reply: 'Greatly appreciate your review, Michael. Enjoy your low-maintenance composite deck—perfect for those summer BBQs with the family!',
     verified: true
   },
   {
     id: 'review-4',
     author: 'Patricia M.',
-    location: 'Fleet, Hampshire',
+    location: 'Stafford, Staffordshire',
     serviceType: 'Boundary Fencing & Clearance',
     date: '2026-04-18',
     rating: 5,
@@ -139,11 +139,11 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     id: 'review-5',
     author: 'Robert J.',
-    location: 'Farnborough, Hampshire',
+    location: 'Sutton Coldfield, West Midlands',
     serviceType: 'Indian Sandstone Patio',
     date: '2026-03-30',
     rating: 5,
-    comment: 'This is the second time I’ve used TC Fencing & Landscaping—they previously did my front fencing. This time, they laid an Indian Sandstone patio. Once again, their attention to detail was top notch. The jointing lines are beautifully consistent, and they graded the drainage perfectly away from the house. Reliable local tradespeople.',
+    comment: 'This is the second time I’ve used GreenScape Landscaping—they previously did my front fencing. This time, they laid an Indian Sandstone patio. Once again, their attention to detail was top notch. The jointing lines are beautifully consistent, and they graded the drainage perfectly away from the house. Reliable local tradespeople.',
     reply: 'Thank you for inviting us back, Robert! It is always a massive compliment to work for returning customers. Hope you enjoy the patio throughout the summer.',
     verified: true
   }
@@ -195,5 +195,5 @@ export const GALLERY_ITEMS: GalleryItem[] = [
 ];
 
 export const LOCAL_AREAS = [
-  'Basingstoke', 'Winchester', 'Reading', 'Fleet', 'Farnborough', 'Hook', 'Camberley', 'Alton', 'Aldershot', 'Newbury', 'Tadley', 'Yateley', 'Sandhurst', 'Hatch Warren', 'Chineham', 'Sherborne St John', 'Cliddesden', 'Dummer', 'Oakley', 'Overton'
+  'Lichfield', 'Tamworth', 'Burton upon Trent', 'Stafford', 'Cannock', 'Rugeley', 'Sutton Coldfield', 'Uttoxeter', 'Alrewas', 'Whittington', 'Shenstone', 'Fazeley', 'Polesworth', 'Armitage', 'Barton-under-Needwood', 'Burntwood', 'Hednesford', 'Stone', 'Brewood', 'Kings Bromley'
 ];

@@ -47,7 +47,7 @@ export default function Header({ activeTab, setActiveTab, onOpenQuote }: HeaderP
           <div className="flex items-center space-x-6">
             <span className="flex items-center text-[#829379]">
               <MapPin className="w-3.5 h-3.5 mr-1.5" />
-              Serving Hampshire & Berkshire (Basingstoke, Winchester, Reading, Fleet)
+              Serving Staffordshire & the West Midlands (Lichfield, Tamworth, Burton, Stafford)
             </span>
             <span className="flex items-center">
               <Clock className="w-3.5 h-3.5 mr-1.5 text-[#a3b29c]" />
@@ -55,13 +55,13 @@ export default function Header({ activeTab, setActiveTab, onOpenQuote }: HeaderP
             </span>
           </div>
           <div className="flex items-center space-x-6">
-            <a href="tel:01256830024" className="flex items-center hover:text-[#829379] transition-colors font-medium">
+            <a href="tel:01214960738" className="flex items-center hover:text-[#829379] transition-colors font-medium">
               <Phone className="w-3.5 h-3.5 mr-1.5" />
-              01256 830024
+              0121 496 0738
             </a>
-            <a href="mailto:info@tcfencinglandscaping.co.uk" className="flex items-center hover:text-[#829379] transition-colors">
+            <a href="mailto:hello@greenscape-staffs.co.uk" className="flex items-center hover:text-[#829379] transition-colors">
               <Mail className="w-3.5 h-3.5 mr-1.5" />
-              info@tcfencinglandscaping.co.uk
+              hello@greenscape-staffs.co.uk
             </a>
           </div>
         </div>
@@ -84,8 +84,8 @@ export default function Header({ activeTab, setActiveTab, onOpenQuote }: HeaderP
             </div>
             <div>
               <div className="flex items-center">
-                <span className="font-sans text-lg md:text-xl font-bold text-[#2d3a27] tracking-tight">TC</span>
-                <span className="font-sans text-xs uppercase tracking-[0.2em] font-semibold text-[#829379] ml-2 mt-1">Fencing & Landscaping</span>
+                <span className="font-sans text-lg md:text-xl font-bold text-[#2d3a27] tracking-tight">GreenScape</span>
+                <span className="font-sans text-xs uppercase tracking-[0.2em] font-semibold text-[#829379] ml-2 mt-1">Landscaping</span>
               </div>
               <div className="flex items-center space-x-1 mt-0.5">
                 <div className="flex text-[#829379]">
@@ -130,7 +130,7 @@ export default function Header({ activeTab, setActiveTab, onOpenQuote }: HeaderP
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center space-x-3">
-            <a href="tel:01256830024" className="p-2 bg-[#2d3a27]/10 rounded-none text-[#2d3a27] hover:bg-[#2d3a27]/20">
+            <a href="tel:01214960738" className="p-2 bg-[#2d3a27]/10 rounded-none text-[#2d3a27] hover:bg-[#2d3a27]/20">
               <Phone className="w-4 h-4" />
             </a>
             <button
@@ -175,9 +175,9 @@ export default function Header({ activeTab, setActiveTab, onOpenQuote }: HeaderP
             </button>
             <div className="text-center text-xs text-[#2d3a27]/70 pt-2 flex flex-col space-y-1 font-semibold tracking-wider uppercase">
               <span className="flex items-center justify-center">
-                <MapPin className="w-3.5 h-3.5 mr-1 text-[#829379]" /> Basingstoke & local areas
+                <MapPin className="w-3.5 h-3.5 mr-1 text-[#829379]" /> Lichfield & local areas
               </span>
-              <span>📞 01256 830024</span>
+              <span>📞 0121 496 0738</span>
             </div>
           </div>
         </div>
